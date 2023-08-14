@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #dddddd;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100px;
+  background-color: #333333;
+}
+
+.header h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+}
+
+div .job-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 36px 125px;
+  /* border: solid red 1px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.job {
+  /* border: solid 10px red; */
+  border: solid 10px;
+  height: 300px;
+  width: 300px;
+  padding: 17px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.job h2 {
+  font-size: 30px;
+  color: black;
+}
+
+footer {
+  background-color: #dddddd;
+  font-size: 18px;
+  height: 63px;
+}
+footer p {
+  line-height: 63px;
+  text-align: center;
+
+  vertical-align: middle;
+}
+footer span {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightcoral;
+}
+
+footer a:hover {
+  color: blue;
+}
+
+/* ---------------- ------------- --------------- */
+/* ---------------- MEDIA QUERIES --------------- */
+/* ---------------- ------------- --------------- */
+/* 1215px */
+@media (max-width: 1215px) {
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .job h2 {
+    font-size: 22px;
+    color: black;
+  }
+
+  .job {
+    border: solid 6px;
+    height: 200px;
+    width: 200px;
+    padding: 17px;
+  }
+}
+
+/* 890px */
+@media (max-width: 690px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .job h2 {
+    font-size: 20px;
+    color: black;
+  }
+}
